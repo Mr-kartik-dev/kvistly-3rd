@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="w-full">
+
+    <nav class="w-full h-20 flex items-center justify-center sticky top-0 z-10">
+        <div class="w-full lg:w-2/3 h-23 flex items-center justify-center ">
+            <div
+                class="w-48 whitespace-nowrap md:w-56 lg:w-[93%] bg-[#F1F1F1] font-semibold h-12 rounded-full  flex items-center justify-start text-[17px] gap-5 px-5 [&>a]:hover:text-gray-500 [&>a]:hover:cursor-pointer">
+                <img src="./public/top-logo.svg" alt="" class="h-8 cursor-pointer">
+                <a href="#" class="hidden lg:block">Explore</a>
+                <a href="#" class="hidden lg:block">Client stories</a>
+                <a href="#" class="hidden lg:block">Help and guides</a>
+                <a href="#" class="hidden lg:block">Blog</a>
+                <a href="#" class="hidden lg:block">Pricing</a>
+                <a href="#" class="hidden lg:block">About us</a>
+                <i class="fa-solid fa-bars md:hidden!"></i>
+            </div>
+        </div>
+        <div class="hidden lg:flex w-1/3 h-23 items-center justify-end gap-7 pr-13 font-semibold">
+            <button class="bg-gray-200 hover:bg-gray-300 rounded-full w-20 h-12 cursor-pointer">Log In</button>
+            <button class="bg-[#3DEB8D] rounded-full w-35 h-12 hover:bg-[#39DD85] cursor-pointer">Book a Demo</button>
+        </div>
+    </nav>
+
+    <header
+        class="w-full h-150 md:h-155 flex flex-col items-center justify-start pt-16 md:pt-24 lg:pt-32 gap-6 lg:gap-8">
+        <h1
+            class="text-[44px] md:text-[64px] lg:text-[80px] text-center mx-5 md:mx-32 lg:mx-80 font-semibold leading-11 md:leading-16 lg:leading-19">
+            AI-Powered Quizzes to Boost Engagement</h1>
+        <h3 class="text-[18px] md:text-[22px] lg:text-[24px] text-center mx-8 md:mx-32 lg:mx-110 text-gray-600">From
+            meetings to events — use AI quizzes to drive
+            engagement effortlessly</h3>
+        <div
+            class=" w-full md:w-[60%] lg:w-[40%] h-32 md:h-20 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+            <button
+                class="bg-black text-white rounded-full w-43 h-14 cursor-pointer font-semibold text-xl hover:bg-[#272727]">Start
+                for free</button>
+            <button
+                class="bg-white hover:bg-gray-100 rounded-full w-43 h-14 border border-gray-400 cursor-pointer font-semibold text-xl">⚽
+                Play
+                a demo</button>
+        </div>
+    </header>
+
+    <div class="w-full h-80 md:h-120 lg:h-170 px-4 md:px-10 lg:px-16 flex items-center justify-center relative">
+        <img src="./public/img-1.gif" class="w-full lg:w-340 h-64 md:h-90 lg:h-150">
+        <img src="./public/today's-quiz.png" alt=""
+            class="absolute bottom-4 md:bottom-8 lg:bottom-10 right-6 md:right-12 lg:right-20 w-36 h-72 md:w-52 md:h-104 lg:w-64.2 lg:h-129.75">
+    </div>
+
+    <h2 class="text-[20px] md:text-[24px] lg:text-[28px] font-semibold my-5 mx-6 lg:mx-0 text-center">Trusted by top
+        companies and universities worldwide</h2>
+    <style>
+        @keyframes scroll {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 15s linear infinite;
+        }
+
+        .animate-scroll:hover {
+            animation-play-state: paused;
+        }
+    </style>
+
+    <div class="flex w-full justify-center my-7">
+        <div class="w-[90%] overflow-hidden">
+            <div class="animate-scroll h-20 items-center">
+
+                <div
+                    class="flex min-w-[90vw] shrink-0 items-center justify-evenly [&>div]:flex [&>div]:items-center [&>div]:shrink-0">
+                    <div class="w-40 h-16"> <img src="./public/balenciaga.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/criteo.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/scotiabank.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/manychat.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/DHL.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/uber.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/nokia.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/Loreal.svg" alt="" class="w-32"> </div>
+
+
+                </div>
+
+                <div
+                    class="flex min-w-[90vw] shrink-0 items-center justify-evenly [&>div]:flex [&>div]:items-center [&>div]:shrink-0">
+                    <div class="w-40 h-16"> <img src="./public/balenciaga.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/criteo.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/scotiabank.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/manychat.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/DHL.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/uber.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/nokia.svg" alt="" class="w-32"> </div>
+                    <div class="w-40 h-16"> <img src="./public/Loreal.svg" alt="" class="w-32"> </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <h1
+        class="text-[32px] md:text-[44px] lg:text-[56px] text-start mt-16 md:mt-24 lg:mt-38 ml-5 md:ml-10 lg:ml-18 font-semibold leading-9 md:leading-12 lg:leading-15">
+        Made for teams,<br> training and events</h1>
+
+    <main class="w-full  min-h-screen mt-11">
+        <div class="w-full lg:h-170 flex flex-col lg:flex-row items-center justify-center gap-7  [&>div]:rounded-3xl">
+            <div class="w-[90%] lg:w-[29%] h-115 lg:h-157 bg-[#F5F5F5] relative px-6 lg:px-10 pt-4">
+                <h3 class="text-[20px] lg:text-[23px] font-semibold">Team Building</h3>
+                <p class="text-[17px] lg:text-[20px] text-gray-400 leading-7">Make team activities more engaging with
+                    quizzes.
+                    Strengthen collaboration, boost communication, and build team spirit — ideal for keeping remote
+                    employees engaged.</p>
+                <img src="./public/4-log.gif" alt=""
+                    class="w-64 h-46 bottom-6 lg:w-98 lg:h-70 lg:bottom-14 absolute mix-blend-multiply">
+            </div>
+            <div class="w-[90%] lg:w-[29%] h-115 lg:h-157 bg-[#F5F5F5] relative px-6 lg:px-10 pt-4">
+                <h3 class="text-[20px] lg:text-[23px] font-semibold">Training and Workshops</h3>
+                <p class="text-[17px] lg:text-[20px] text-gray-400  leading-7">Turn learning into an engaging experience
+                    with
+                    interactive quizzes. Improve knowledge retention, increase participation, and track progress easily
+                </p>
+                <img src="./public/5-log.gif" alt=""
+                    class="w-64 h-46 bottom-6 lg:w-98 lg:h-70 lg:bottom-14 absolute mix-blend-multiply">
+            </div>
+            <div class="w-[90%] lg:w-[29%] h-115 lg:h-157 bg-[#F5F5F5] relative px-6 lg:px-10 pt-4">
+                <h3 class="text-[20px] lg:text-[23px] font-semibold">Conferences and events</h3>
+                <p class="text-[17px] lg:text-[20px] text-gray-400  leading-7">Enhance audience interaction and
+                    engagement with live
+                    quizzes. Perfect for in-person, virtual, and hybrid events</p>
+                <img src="./public/2-log.png" alt=""
+                    class="w-64 h-46 bottom-6 lg:w-98 lg:h-70 lg:bottom-14 absolute mix-blend-multiply">
+            </div>
+        </div>
+
+
+        <h1
+            class="text-[34px] md:text-[48px] lg:text-[66px] text-center m-10 md:m-24 lg:m-86 mb-0 md:mb-0 lg:mb-0 font-semibold leading-10 md:leading-14 lg:leading-18">
+            Engage your audience with interactive
+            quizzes</h1>
+
+        <div class="w-full lg:h-165 flex flex-col-reverse lg:flex-row my-16 md:my-24 lg:my-48">
+            <div class="w-full lg:w-[50%] lg:h-160 pl-5 md:pl-10 lg:pl-20 py-8 md:py-10 lg:py-42">
+                <h2
+                    class="text-[30px] md:text-[40px] lg:text-[52px] font-semibold leading-9 md:leading-11 lg:leading-14 lg:mr-45">
+                    AI creates quizzes, you save time</h2>
+                <p class="text-[17px] lg:text-[21px] text-gray-600 my-6 lg:mr-50">Turn any text or document into a quiz
+                    in
+                    seconds. No
+                    manual work — just quick, engaging quizzes for learning and events.</p>
+                <button
+                    class="border cursor-pointer border-gray-400 hover:bg-gray-200 rounded-full w-37 h-12 text-xl font-semibold">Try
+                    for
+                    free</button>
+            </div>
+            <div class="w-full lg:w-[50%] h-72 md:h-120 lg:h-160 pl-5 pr-5 lg:pl-9 lg:pr-0">
+                <div
+                    class="bg-[#F1F1F1] rounded-2xl w-full lg:w-162 h-72 md:h-120 lg:h-160 flex items-center justify-center">
+                    <img src="./public/AI.png" alt="" class="w-72 md:w-120 lg:w-150">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full lg:h-165 flex flex-col-reverse lg:flex-row my-16 md:my-24 lg:my-48">
+            <div class="w-full lg:w-[50%] lg:h-160 pl-5 md:pl-10 lg:pl-20 py-8 md:py-10 lg:py-36">
+                <h2
+                    class="text-[30px] md:text-[40px] lg:text-[52px] font-semibold leading-9 md:leading-11 lg:leading-14 lg:mr-45">
+                    Turn passive audiences into active participants
+                </h2>
+                <p class="text-[17px] lg:text-[21px] text-gray-600 my-6 lg:mr-50">Make meetings and training more
+                    engaging with risk-based
+                    quizzes and live leaderboards. Keep participants invested, spark competition, and boost learning.
+                </p>
+                <button
+                    class="border cursor-pointer hover:bg-gray-200 border-gray-400 rounded-full w-37 h-12 text-xl font-semibold">Try
+                    for
+                    free</button>
+            </div>
+            <div class="w-full lg:w-[50%] h-72 md:h-120 lg:h-160 pl-5 pr-5 lg:pl-9 lg:pr-0">
+                <div
+                    class="bg-[#F1F1F1] rounded-2xl w-full lg:w-162 h-72 md:h-120 lg:h-160 flex items-center relative justify-center">
+                    <img src="./public/kvistly.png" alt="" class="w-52 md:w-72 lg:w-90 absolute bottom-0">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full lg:h-165 flex flex-col-reverse lg:flex-row my-16 md:my-24 lg:my-48">
+            <div class="w-full lg:w-[50%] lg:h-160 pl-5 md:pl-10 lg:pl-20 py-8 md:py-10 lg:py-35">
+                <h2
+                    class="text-[30px] md:text-[40px] lg:text-[52px] font-semibold leading-9 md:leading-11 lg:leading-14 lg:mr-50">
+                    Measure knowledge, track progress, improve
+                    results</h2>
+                <p class="text-[17px] lg:text-[21px] text-gray-600 my-6 lg:mr-50">Track knowledge, measure engagement,
+                    and see real-time
+                    progress to improve learning outcomes.</p>
+                <button
+                    class="border  cursor-pointer hover:bg-gray-200 border-gray-400 rounded-full w-37 h-12 text-xl font-semibold">Try
+                    for
+                    free</button>
+            </div>
+            <div class="w-full lg:w-[50%] h-72 md:h-120 lg:h-160 pl-5 pr-5 lg:pl-9 lg:pr-0">
+                <div
+                    class="bg-[#F1F1F1] rounded-2xl w-full lg:w-162 h-72 md:h-120 lg:h-160 flex items-center justify-center">
+                    <img src="./public/acme.png" alt="" class="w-72 md:w-120 lg:w-150">
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-[32px] md:text-[44px] lg:text-[56px] text-start ml-5 md:ml-10 lg:ml-20 my-10 font-semibold">Get
+            started in 3 steps</h1>
+        <div class="w-full lg:h-55  gap-8 lg:gap-19 flex flex-col lg:flex-row my-8 items-center justify-center ">
+            <div class="w-80 md:w-100 lg:h-55 ">
+                <div class="w-15 h-15 rounded-full  bg-[#EEE9F5] flex items-center justify-center text-4xl font-bold">1
+                </div>
+                <h4 class="text-[23px] font-semibold my-3">Sign up and get started</h4>
+                <p class="text-[20px] leading-6">Sign up in seconds and start using Kvistly for free. Get instant access
+                    to AI-powered quizzes without any commitments or setup</p>
+            </div>
+            <div class="w-80 md:w-100 lg:h-55 ">
+                <div class="w-15 h-15 rounded-full  bg-[#EEE9F5] flex items-center justify-center text-4xl font-bold">2
+                </div>
+                <h4 class="text-[23px] font-semibold my-3">Create quiz</h4>
+                <p class="text-[20px] leading-6">Use AI to instantly generate quiz questions or create your own from
+                    scratch. Tailor quizzes for team activities, training, or large-scale events.</p>
+            </div>
+            <div class="w-80 md:w-100 lg:h-55">
+                <div class="w-15 h-15 rounded-full bg-[#EEE9F5] flex items-center justify-center text-4xl font-bold">3
+                </div>
+                <h4 class="text-[23px] font-semibold my-3">Invite players</h4>
+                <p class="text-[20px] leading-6">Easily share a QR code or link. Participants can join from any device,
+                    making it simple and fun to engage everyone.</p>
+            </div>
+        </div>
+
+        <div class="flex pl-5 md:pl-10 lg:pl-20 gap-4 [&>button]:cursor-pointer my-18">
+            <button class="w-40 lg:w-45 text-white font-bold text-xl h-14 bg-black hover:bg-[#272727] rounded-4xl">Start
+                for
+                free</button>
+            <button
+                class="w-40 lg:w-45 text-black font-bold text-xl h-14 bg-white hover:bg-[#F5F5F5] border border-gray-500 rounded-4xl">Book
+                a demo</button>
+        </div>
+
+
+        <section class="w-full lg:h-200  flex flex-col items-start pl-5 md:pl-10 lg:pl-20 font-semibold">
+            <h1 class="text-[32px] md:text-[44px] lg:text-[56px]">More features</h1>
+            <div class="flex gap-3 my-10">
+                <button
+                    class="w-12 h-12 rounded-full bg-[#E9E9E9] text-white text-base flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </button>
+                <button
+                    class="w-12 h-12 rounded-full bg-[#272727] text-white text-base flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </div>
+
+            <div class="w-full lg:h-133 flex flex-col lg:flex-row items-center justify-between gap-5 pr-5 lg:pr-20">
+                <div class="w-full lg:w-[439px] h-[535px] bg-[#e9e9e9] rounded-3xl pt-5 px-5">
+                    <h2 class="text-xl lg:text-2xl">Multi-language support</h2>
+                    <p class="text-lg lg:text-xl text-gray-400 my-3">Host quizzes in 8 languages: English, Spanish,
+                        Catalan,
+                        French, German, Italian, Brazilian Portuguese and Russian</p>
+                    <img src="./public/english.svg" alt="" class="pl-8 mb-0">
+                </div>
+                <div class="w-full lg:w-[439px] h-[535px] bg-[#e9e9e9] rounded-3xl py-5 px-5">
+                    <h2 class="text-xl lg:text-2xl">Multi-language support</h2>
+                    <p class="text-lg lg:text-xl text-gray-400 my-3">Host quizzes in 8 languages: English, Spanish,
+                        Catalan,
+                        French, German, Italian, Brazilian Portuguese and Russian</p>
+                    <img src="./public/green.jpg" alt=""
+                        class="pl-5 w-90 h-80 mix-blend-multiply contrast-125 brightness-105">
+                </div>
+                <div class="w-full lg:w-[439px] h-[535px] bg-[#e9e9e9] rounded-3xl pt-5 px-5">
+                    <h2 class="text-xl lg:text-2xl">Multi-language support</h2>
+                    <p class="text-lg lg:text-xl text-gray-400 my-3">Host quizzes in 8 languages: English, Spanish,
+                        Catalan,
+                        French, German, Italian, Brazilian Portuguese and Russian</p>
+                    <img src="./public/3-device.svg" alt="" class="pl-15 mt-70 mix-blend-multiply">
+                </div>
+            </div>
+        </section>
+
+
+        <div class="w-full flex items-center justify-start flex-col mt-20 lg:mt-70 mb-20 lg:mb-50 lg:h-160 ">
+            <img src="./public/indrive.svg" alt="" class="w-37">
+            <h1
+                class="text-[22px] md:text-[34px] lg:text-[50px] mx-5 md:mx-16 lg:mx-32 text-center leading-8 md:leading-11 lg:leading-16 my-6">
+                "Before Kvistly, our onboarding was more of a
+                one-way lecture, which made it challenging to keep new hires engaged. Now, with Kvistly’s quizzes, our
+                sessions are interactive, engaging, and fun. New employees are more relaxed, and their first-day
+                experience is significantly improved"</h1>
+            <div class="w-80 md:w-150 lg:h-30 my-5 flex flex-col md:flex-row">
+                <div class="flex items-start  w-full md:w-[50%] gap-5  h-20 md:h-30 ">
+                    <img src="./public/dp.jpg" alt="" class="rounded-full w-15 h-15">
+                    <div>
+                        <h5 class="text-2xl font-semibold">Yana Topolenko</h5>
+                        <h4 class="text-xl text-gray-400 font-semibold">Onboarding Manager</h4>
+                    </div>
+                </div>
+                <div class="w-full md:w-[50%] h-20 md:h-30 md:pl-5">
+                    <h1 class="text-xl font-semibold underline hover:no-underline cursor-pointer">See how Kvistly
+                        transformed inDrive's onboarding</h1>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <section class="w-full lg:h-200 pl-5 md:pl-10 lg:pl-20 pr-5 lg:pr-8">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold lg:mr-200">Discover how our clients use Kvistly
+            </h1>
+            <div
+                class="w-full lg:h-140 my-14 flex flex-col lg:flex-row justify-between gap-6 lg:gap-0 [&>div]:cursor-pointer">
+                <div class="w-full lg:w-[23%] h-135  hover:scale-105 duration-300">
+                    <div
+                        class="relative w-full h-117 bg-[url('../public/2-girls.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl">
+                        <img src="./public/w-1.svg" class="absolute top-50 left-17 w-45">
+                    </div>
+                    <div class="w-full h-18">
+                        <h3 class="text-[21px] font-semibold mt-4 mb-0 hover:text-gray-500">inDrive</h3>
+                        <h4 class="text-[20px] font-semibold text-gray-400">Smooth onboarding experience</h4>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[23%] h-135  hover:scale-105 duration-300">
+                    <div
+                        class="relative w-full h-117 bg-[url('../public/mobile.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl">
+                        <img src="./public/w-2.svg" class="absolute top-50 left-17 w-45">
+                    </div>
+                    <div class="w-full h-18">
+                        <h3 class="text-[21px] font-semibold mt-4 mb-0 hover:text-gray-500">Giftery</h3>
+                        <h4 class="text-[20px] font-semibold text-gray-400">Engaging remote employees</h4>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[23%] h-135  hover:scale-105 duration-300">
+                    <div
+                        class="relative w-full h-117 bg-[url('../public/hand.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl">
+                        <img src="./public/w-3.svg" class="absolute top-50 left-17 w-45">
+                    </div>
+                    <div class="w-full h-18">
+                        <h3 class="text-[21px] font-semibold mt-4 mb-0 hover:text-gray-500">Manychat</h3>
+                        <h4 class="text-[20px] font-semibold text-gray-400">Interactive team events</h4>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[23%] h-135  hover:scale-105 duration-300">
+                    <div
+                        class="relative w-full h-117 bg-[url('../public/perfume.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl">
+                        <img src="./public/w-4.svg" class="absolute top-50 left-17 w-45">
+                    </div>
+                    <div class="w-full h-18">
+                        <h3 class="text-[21px] font-semibold mt-4 mb-0 hover:text-gray-500">Danbel</h3>
+                        <h4 class="text-[20px] font-semibold text-gray-400">Sales training with gamification</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="w-full lg:h-230  mt-20 lg:mt-40 mb-20 flex flex-col items-center">
+            <h1 class="text-center text-4xl md:text-5xl lg:text-6xl font-semibold">Questions? Answers!</h1>
+            <div class="w-[90%] lg:w-[70%] lg:h-200 mt-13 flex flex-col [&>div]:hover:text-[#696969] ">
+                <div class="group w-full border-b border-gray-300 flex h-24 lg:h-20 ">
+                    <div class="w-[80%] lg:w-[92%] h-24 lg:h-20 flex items-center">
+                        <h3 class="font-semibold text-lg lg:text-2xl">Is Kvistly free to use as a quiz maker?</h3>
+                    </div>
+                    <div class="w-[20%] lg:w-[8%] h-24 lg:h-20 flex items-center justify-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-black flex items-center group-hover:bg-[#696969] justify-center">
+                            <img src="./public/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="group w-full border-b border-gray-300 flex h-24 lg:h-20 hover:text-gray-300">
+                    <div class="w-[80%] lg:w-[92%] h-24 lg:h-20 flex items-center">
+                        <h3 class="font-semibold text-lg lg:text-2xl">What is Kvistly and how does it work as a quiz
+                            maker?</h3>
+                    </div>
+                    <div class="w-[20%] lg:w-[8%] h-24 lg:h-20 flex items-center justify-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-black flex items-center group-hover:bg-[#696969] justify-center">
+                            <img src="./public/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="group w-full border-b border-gray-300 flex h-24 lg:h-20 hover:text-gray-300">
+                    <div class="w-[80%] lg:w-[92%] h-24 lg:h-20 flex items-center">
+                        <h3 class="font-semibold text-lg lg:text-2xl">IWhat makes Kvistly different from other quiz
+                            tools?</h3>
+                    </div>
+                    <div class="w-[20%] lg:w-[8%] h-24 lg:h-20 flex items-center justify-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-black flex items-center group-hover:bg-[#696969] justify-center">
+                            <img src="./public/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="group w-full border-b border-gray-300 flex h-24 lg:h-20 hover:text-gray-300">
+                    <div class="w-[80%] lg:w-[92%] h-24 lg:h-20 flex items-center">
+                        <h3 class="font-semibold text-lg lg:text-2xl">How do you make a quiz using Kvistly</h3>
+                    </div>
+                    <div class="w-[20%] lg:w-[8%] h-24 lg:h-20 flex items-center justify-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-black flex items-center group-hover:bg-[#696969] justify-center">
+                            <img src="./public/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="group w-full border-b border-gray-300 flex h-24 lg:h-20 hover:text-gray-300">
+                    <div class="w-[80%] lg:w-[92%] h-24 lg:h-20 flex items-center">
+                        <h3 class="font-semibold text-lg lg:text-2xl">Can istly be used as an employee engagement tool
+                            for HR
+                            teams?</h3>
+                    </div>
+                    <div class="w-[20%] lg:w-[8%] h-24 lg:h-20 flex items-center justify-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-black flex items-center group-hover:bg-[#696969] justify-center">
+                            <img src="./public/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="group w-full border-b border-gray-300 flex h-24 lg:h-20 hover:text-gray-300">
+                    <div class="w-[80%] lg:w-[92%] h-24 lg:h-20 flex items-center">
+                        <h3 class="font-semibold text-lg lg:text-2xl">Is Kvistly suitable as as assessment tool for
+                            teachers and
+                            classroms?</h3>
+                    </div>
+                    <div class="w-[20%] lg:w-[8%] h-24 lg:h-20 flex items-center justify-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-black flex items-center group-hover:bg-[#696969] justify-center">
+                            <img src="./public/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="group w-full border-b border-gray-300 flex h-24 lg:h-20 hover:text-gray-300">
+                    <div class="w-[80%] lg:w-[92%] h-24 lg:h-20 flex items-center">
+                        <h3 class="font-semibold text-lg lg:text-2xl">How does Kvistly work as an online quiz maker?
+                        </h3>
+                    </div>
+                    <div class="w-[20%] lg:w-[8%] h-24 lg:h-20 flex items-center justify-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-black flex items-center group-hover:bg-[#696969] justify-center">
+                            <img src="./public/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="group w-full border-b border-gray-300 flex h-24 lg:h-20 hover:text-gray-300">
+                    <div class="w-[80%] lg:w-[92%] h-24 lg:h-20 flex items-center">
+                        <h3 class="font-semibold text-lg lg:text-2xl">What features does Kvistly include as an
+                            interactive quiz
+                            maker?</h3>
+                    </div>
+                    <div class="w-[20%] lg:w-[8%] h-24 lg:h-20 flex items-center justify-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-black flex items-center group-hover:bg-[#696969] justify-center">
+                            <img src="./public/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="group w-full border-b border-gray-300 flex h-24 lg:h-20 hover:text-gray-300">
+                    <div class="w-[80%] lg:w-[92%] h-24 lg:h-20 flex items-center">
+                        <h3 class="font-semibold text-lg lg:text-2xl">Can I use Kvistly for team buliding games and
+                            engegement?
+                        </h3>
+                    </div>
+                    <div class="w-[20%] lg:w-[8%] h-24 lg:h-20 flex items-center justify-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-black flex items-center group-hover:bg-[#696969] justify-center">
+                            <img src="./public/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="w-full lg:h-430 bg-black flex flex-col items-center justify-start">
+        <h1
+            class="text-center mx-5 md:mx-32 lg:mx-100 mt-16 md:mt-24 lg:mt-35 text-4xl md:text-5xl lg:text-6xl text-white font-bold">
+            Create AI-powered quizzes with Kvistly!</h1>
+        <div
+            class="w-full h-20 flex justify-center my-12 gap-4 [&>button]:flex [&>button]:items-center  [&>button]:justify-center  [&>button]:cursor-pointer">
+            <button
+                class="w-32 lg:w-40 font-semibold rounded-full h-13 bg-white text-base lg:text-xl hover:bg-[#E6E6E6]">Try
+                for free</button>
+            <button
+                class="w-44 lg:w-55 font-semibold text-white bg-black h-13 rounded-full text-base lg:text-xl border border-gray-700 hover:border-gray-800">
+                Schedule for a demo</button>
+        </div>
+        <img src="./public/footer-img.jpg" alt="" class="w-80 h-80 md:w-120 md:h-120 lg:w-170 lg:h-170 mb-12">
+
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-0 w-full lg:h-65">
+            <div class="w-full lg:w-[50%] lg:h-60  flex flex-col justify-start items-start pl-7">
+                <img src="./public/top-logo.svg" alt="" class="brightness-0 invert w-35 h-35 cursor-pointer -mb-7">
+                <h3 class="text-white text-xl">AI-powered quiz maker</h3>
+                <img src="./public/education.png" alt="" class="w-57.5 rounded-2xl h-12.5 cursor-pointer mt-3 ">
+            </div>
+            <div class="w-full lg:w-[50%] lg:h-60  flex flex-col md:flex-row gap-8 md:gap-0 pl-7 lg:pl-0">
+                <div
+                    class="w-full md:w-[33%] md:h-60  flex items-start flex-col gap-3 [&>a]:cursor-pointer [&>a]:text-xl [&>a]:font-semibold">
+                    <a href="#" class="text-gray-500 hover:text-white">Explore</a>
+                    <a href="#" class="text-white hover:text-gray-400">For sales trainings</a>
+                    <a href="#" class="text-white hover:text-gray-400">For team buildings</a>
+                    <a href="#" class="text-white hover:text-gray-400">Team development</a>
+
+                </div>
+                <div
+                    class="w-full md:w-[33%] md:h-60  flex items-start flex-col gap-3 [&>a]:cursor-pointer [&>a]:text-xl [&>a]:font-semibold">
+                    <a href="" class="text-gray-500 hover:text-white">Company</a>
+                    <a href="" class="text-white hover:text-gray-400">About us</a>
+                    <a href="" class="text-white hover:text-gray-400">Pricing</a>
+                </div>
+                <div
+                    class="w-full md:w-[33%] md:h-60  flex items-start flex-col gap-3 [&>a]:cursor-pointer [&>a]:text-xl [&>a]:font-semibold">
+                    <a href="" class="text-gray-500 hover:text-white">Resources</a>
+                    <a href="" class="text-white hover:text-gray-400">Help and guides</a>
+                    <a href="" class="text-white hover:text-gray-400">Blog</a>
+                    <a href="" class="text-white hover:text-gray-400">Client stories</a>
+                    <a href="" class="text-white hover:text-gray-400">Releases</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full lg:h-20 flex flex-col lg:flex-row">
+            <div
+                class="w-full lg:w-[50%] h-20 flex gap-4 py-10 md:py-0 pl-8 [&>img]:cursor-pointer [&>img]:hover:opacity-70">
+                <img src="./public/insts.svg" alt="" class="h-12 w-12">
+                <img src="./public/linkdin.svg" alt="" class="h-12 w-12 ">
+                <img src="./public/x.svg" alt="" class="h-12 w-12 ">
+                <img src="./public/github.svg" alt="" class="h-12 w-12 ">
+                <img src="./public/facebook.svg" alt="" class="h-12 w-12 ">
+
+            </div>
+            <div class="w-full lg:w-[50%] lg:h-20 flex flex-col lg:flex-row gap-3 [&>div]:pl-8 lg:[&>div]:pl-3">
+                <div class="w-full lg:w-[33%] h-10 lg:h-20 flex items-center">
+                    <h3 class="font-semibold text-md text-gray-500 hover:text-gray-600 cursor-pointer">Privacy Policy
+                    </h3>
+                </div>
+                <div class="w-full lg:w-[33%] h-10 lg:h-20 flex items-center">
+                    <h3 class="font-semibold text-md text-gray-500 hover:text-gray-600 cursor-pointer">Terms of Service
+                    </h3>
+                </div>
+                <div class="w-full lg:w-[33%] h-10 lg:h-20 flex items-center">
+                    <h3 class="font-semibold text-md text-gray-500 hover:text-gray-600 cursor-pointer">© 2026 Magic
+                        Quiz, S.L.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-53 flex items-center justify-center">
+            <img src="./public/duck.png" alt="" class="w-30 h-40 ">
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
