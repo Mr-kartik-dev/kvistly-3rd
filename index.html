@@ -15,10 +15,10 @@
 <body class="w-full">
 
     <nav class="w-full h-20 flex items-center justify-center sticky top-0 z-10">
-        <div class="w-full lg:w-2/3 h-23 flex items-center justify-center ">
+        <div class="w-full lg:w-[50%] h-23 flex items-center justify-center ">
             <div
                 class="w-48 whitespace-nowrap md:w-56 lg:w-[93%] bg-[#F1F1F1] font-semibold h-12 rounded-full  flex items-center justify-start text-[17px] gap-5 px-5 [&>a]:hover:text-gray-500 [&>a]:hover:cursor-pointer">
-                <img src="./public/top-logo.svg" alt="" class="h-8 cursor-pointer">
+                <img src="./public/top-logo.svg" alt="" class="h-8 cursor-pointer hover:opacity-70">
                 <a href="#" class="hidden lg:block">Explore</a>
                 <a href="#" class="hidden lg:block">Client stories</a>
                 <a href="#" class="hidden lg:block">Help and guides</a>
@@ -28,7 +28,7 @@
                 <i class="fa-solid fa-bars md:hidden!"></i>
             </div>
         </div>
-        <div class="hidden lg:flex w-1/3 h-23 items-center justify-end gap-7 pr-13 font-semibold">
+        <div class="hidden lg:flex md:w-[50%] h-23 items-center justify-end gap-7 pr-13 font-semibold">
             <button class="bg-gray-200 hover:bg-gray-300 rounded-full w-20 h-12 cursor-pointer">Log In</button>
             <button class="bg-[#3DEB8D] rounded-full w-35 h-12 hover:bg-[#39DD85] cursor-pointer">Book a Demo</button>
         </div>
@@ -123,7 +123,8 @@
         Made for teams,<br> training and events</h1>
 
     <main class="w-full  min-h-screen mt-11">
-        <div class="w-full lg:h-170 flex flex-col lg:flex-row items-center justify-center gap-7  [&>div]:rounded-3xl">
+        <div
+            class="w-full lg:h-170 flex flex-col lg:flex-row items-center justify-center gap-7  [&>div]:rounded-3xl [&>div]:hover:scale-105 [&>div]:duration-300">
             <div class="w-[90%] lg:w-[29%] h-115 lg:h-157 bg-[#F5F5F5] relative px-6 lg:px-10 pt-4">
                 <h3 class="text-[20px] lg:text-[23px] font-semibold">Team Building</h3>
                 <p class="text-[17px] lg:text-[20px] text-gray-400 leading-7">Make team activities more engaging with
@@ -269,33 +270,33 @@
                     <i class="fa-solid fa-arrow-left-long"></i>
                 </button>
                 <button
-                    class="w-12 h-12 rounded-full bg-[#272727] text-white text-base flex items-center justify-center">
+                    class="w-12 h-12 rounded-full bg-[#272727] hover:bg-[#5A5B59] text-white text-base flex items-center justify-center">
                     <i class="fa-solid fa-arrow-right-long"></i>
                 </button>
             </div>
 
-            <div class="w-full lg:h-133 flex flex-col lg:flex-row items-center justify-between gap-5 pr-5 lg:pr-20">
-                <div class="w-full lg:w-[439px] h-[535px] bg-[#e9e9e9] rounded-3xl pt-5 px-5">
+            <div class="w-full md:h-133 flex flex-col lg:flex-row items-center justify-between gap-5 pr-5 lg:pr-20">
+                <div class="w-full md:w-109.7 h-133.7 bg-[#e9e9e9] rounded-3xl pt-5 px-5">
                     <h2 class="text-xl lg:text-2xl">Multi-language support</h2>
                     <p class="text-lg lg:text-xl text-gray-400 my-3">Host quizzes in 8 languages: English, Spanish,
                         Catalan,
                         French, German, Italian, Brazilian Portuguese and Russian</p>
                     <img src="./public/english.svg" alt="" class="pl-8 mb-0">
                 </div>
-                <div class="w-full lg:w-[439px] h-[535px] bg-[#e9e9e9] rounded-3xl py-5 px-5">
-                    <h2 class="text-xl lg:text-2xl">Multi-language support</h2>
-                    <p class="text-lg lg:text-xl text-gray-400 my-3">Host quizzes in 8 languages: English, Spanish,
-                        Catalan,
-                        French, German, Italian, Brazilian Portuguese and Russian</p>
+                <div class="w-full md:w-109.7 h-133.7 bg-[#e9e9e9] rounded-3xl py-5 px-5">
+                    <h2 class="text-xl lg:text-2xl">Make quizzes visual</h2>
+                    <p class="text-lg lg:text-xl text-gray-400 my-3">Make questions more engaging by adding visuals to
+                        improve understanding and retention</p>
                     <img src="./public/green.jpg" alt=""
                         class="pl-5 w-90 h-80 mix-blend-multiply contrast-125 brightness-105">
                 </div>
-                <div class="w-full lg:w-[439px] h-[535px] bg-[#e9e9e9] rounded-3xl pt-5 px-5">
-                    <h2 class="text-xl lg:text-2xl">Multi-language support</h2>
-                    <p class="text-lg lg:text-xl text-gray-400 my-3">Host quizzes in 8 languages: English, Spanish,
-                        Catalan,
-                        French, German, Italian, Brazilian Portuguese and Russian</p>
-                    <img src="./public/3-device.svg" alt="" class="pl-15 mt-70 mix-blend-multiply">
+                <div class="w-full md:w-109.7 h-133.7 bg-[#e9e9e9] rounded-3xl pt-5 px-5">
+                    <h2 class="text-xl lg:text-2xl">Join from any device, instantly</h2>
+                    <p class="text-lg lg:text-xl text-gray-400 my-3">No downloads needed — just open the link or scan a
+                        QR code
+
+                    </p>
+                    <img src="./public/3-device.svg" alt="" class="md:pl-15 pl-5 mt-80 mix-blend-multiply">
                 </div>
             </div>
         </section>
